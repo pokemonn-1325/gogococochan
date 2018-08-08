@@ -1,0 +1,57 @@
+2018-08-07T14:49:08.229Z - normal: Load ~/.CocosCreator/settings.json
+2018-08-07T14:49:08.234Z - normal: checking language setting...
+2018-08-07T14:49:08.235Z - normal: Language: en
+2018-08-07T14:49:08.757Z - success: protocol editor-framework registered
+2018-08-07T14:49:08.758Z - success: protocol app registered
+2018-08-07T14:49:08.758Z - success: protocol theme registered
+2018-08-07T14:49:08.759Z - success: protocol profile registered
+2018-08-07T14:49:08.759Z - success: protocol packages registered
+2018-08-07T14:49:08.763Z - success: protocol unpack registerred
+2018-08-07T14:49:08.763Z - success: protocol disable-commonjs registerred
+2018-08-07T14:49:09.518Z - normal: connected!
+2018-08-07T14:49:09.523Z - normal: Check project /Users/user/NewProject/GoGoCocochan
+2018-08-07T14:49:09.525Z - normal: Initializing Cocos2d
+2018-08-07T14:49:09.789Z - normal: Initializing Asset Database
+2018-08-07T14:49:09.832Z - success: protocol uuid registerred
+2018-08-07T14:49:09.832Z - success: protocol db registerred
+2018-08-07T14:49:09.832Z - success: protocol thumbnail registerred
+2018-08-07T14:49:09.832Z - normal: Loading editor/builtin packages
+2018-08-07T14:49:09.864Z - success: anysdk loaded
+2018-08-07T14:49:10.039Z - success: assets loaded
+2018-08-07T14:49:10.044Z - success: builder loaded
+2018-08-07T14:49:10.050Z - success: hierarchy loaded
+2018-08-07T14:49:10.057Z - success: inspector loaded
+2018-08-07T14:49:10.059Z - success: keystore loaded
+2018-08-07T14:49:10.064Z - success: node-library loaded
+2018-08-07T14:49:10.067Z - success: package-asset loaded
+2018-08-07T14:49:10.070Z - success: preferences loaded
+2018-08-07T14:49:10.089Z - success: project-importer loaded
+2018-08-07T14:49:10.094Z - success: project-settings loaded
+2018-08-07T14:49:10.099Z - success: ui-kit loaded
+2018-08-07T14:49:10.105Z - success: ui-grid loaded
+2018-08-07T14:49:10.111Z - success: scene loaded
+2018-08-07T14:49:10.112Z - success: sprite-editor loaded
+2018-08-07T14:49:10.118Z - success: store loaded
+2018-08-07T14:49:10.126Z - success: timeline loaded
+2018-08-07T14:49:10.126Z - normal: Loading builtin packages
+2018-08-07T14:49:10.132Z - success: asset-db-debugger loaded
+2018-08-07T14:49:10.134Z - success: code-editor loaded
+2018-08-07T14:49:10.135Z - success: color-picker loaded
+2018-08-07T14:49:10.142Z - success: console loaded
+2018-08-07T14:49:10.147Z - success: package-manager loaded
+2018-08-07T14:49:10.160Z - success: sdkbox loaded
+2018-08-07T14:49:10.165Z - success: tester loaded
+2018-08-07T14:49:10.171Z - success: ui-kit-preview-extra loaded
+2018-08-07T14:49:10.178Z - success: ui-kit-preview loaded
+2018-08-07T14:49:10.183Z - success: ui-tree loaded
+2018-08-07T14:49:10.244Z - normal: Initializing project /Users/user/NewProject/GoGoCocochan
+2018-08-07T14:49:10.247Z - normal: Loading packages
+2018-08-07T14:49:10.252Z - normal: Watching packages
+2018-08-07T14:49:10.266Z - normal: Run Application
+2018-08-07T14:49:10.772Z - success: preview server running at http://localhost:7456
+2018-08-07T14:49:13.534Z - error: TypeError: Path must be a string. Received undefined
+    at assertPath (path.js:7:11)
+    at Object.extname (path.js:1433:5)
+    at new CodeEditor (/Applications/CocosCreator.app/Contents/Resources/app.asar/builtin/code-editor/panel/editor.js:74:27)
+    at HTMLDocument.document.addEventListener (file:///Applications/CocosCreator.app/Contents/Resources/app.asar/builtin/code-editor/panel/page.js:162:18)
+2018-08-07T14:49:15.576Z - normal: 1.5.0

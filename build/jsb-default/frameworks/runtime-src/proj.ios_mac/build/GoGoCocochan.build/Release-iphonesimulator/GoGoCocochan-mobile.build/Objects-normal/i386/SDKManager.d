@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/ios/Prefix.pch \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/Classes/SDKManager.cpp \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/Classes/SDKManager.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/AgentManager.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/PluginManager.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/PluginProtocol.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/PluginParam.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/PluginFactory.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/ProtocolIAP.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/ProtocolAnalytics.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/ProtocolShare.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/ProtocolAds.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/ProtocolSocial.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/ProtocolUser.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/ProtocolPush.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/ProtocolCrash.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/ProtocolREC.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/ProtocolCustom.h \
+  /Users/user/NewProject/GoGoCocochan/build/jsb-default/frameworks/runtime-src/proj.ios_mac/../../cocos2d-x/external/ios/include/anysdk/ProtocolAdTracking.h

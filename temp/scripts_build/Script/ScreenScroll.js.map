@@ -1,0 +1,30 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "otherBgSprite",
+    "default",
+    "type",
+    "Sprite",
+    "moveSpeed",
+    "onLoad",
+    "update",
+    "dt",
+    "moveX",
+    "node",
+    "x",
+    "width"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;;AAER;AACAC,uBAAc;AACVC,qBAAS,IADC;AAEVC,kBAAMP,GAAGQ;AAFC,SAHN;AAOR;AACAC,mBAAW;AARH,KAHP;;AAcL;AACAC,YAAQ,kBAAY,CAEnB,CAjBI;;AAmBL;AACCC,YAAQ,gBAAUC,EAAV,EAAc;AACnB;AACA,YAAIC,QAAQ,KAAKJ,SAAL,GAAiBG,EAA7B;;AAEA;AACA,YAAG,KAAKE,IAAL,CAAUC,CAAV,IAAe,CAAC,KAAKD,IAAL,CAAUE,KAA7B,EAAoC;AACpC,iBAAKF,IAAL,CAAUC,CAAV,GAAc,KAAKV,aAAL,CAAmBS,IAAnB,CAAwBC,CAAxB,GAA4B,KAAKV,aAAL,CAAmBS,IAAnB,CAAwBE,KAApD,GAA4DH,KAA1E;AACC,SAFD,MAEO;AACH;AACA,iBAAKC,IAAL,CAAUC,CAAV,GAAc,KAAKD,IAAL,CAAUC,CAAV,GAAcF,KAA5B;AACH;AACH;AA/BG,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\n    extends: cc.Component,\n\n    properties: {\n    \n        // スクロール用背景のもう一枚をい指定\n        otherBgSprite:{\n            default: null,\n            type: cc.Sprite,\n        },\n        // 移動スピード\n        moveSpeed: 500,\n    },\n\n    // use this for initialization\n    onLoad: function () {\n\n    },\n\n    // called every frame, uncomment this function to activate update callback\n     update: function (dt) {\n        //[移動量]dt(1フレームにかかった時間)を掛けることで、FPSに依らないスピードで移動させる\n        var moveX = this.moveSpeed * dt;\n        \n        // 左端まで移動したら、右側の背景画像の右側に配置する\n        if(this.node.x <= -this.node.width) {\n        this.node.x = this.otherBgSprite.node.x + this.otherBgSprite.node.width - moveX\n        } else {\n            //移動\n            this.node.x = this.node.x - moveX;\n        }\n     },\n});\n"
+  ]
+}

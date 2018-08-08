@@ -1,0 +1,45 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "jumpDurationTime",
+    "jumpHeight",
+    "_isJumping",
+    "onLoad",
+    "SetTouchEvent",
+    "self",
+    "eventManager",
+    "addListener",
+    "event",
+    "EventListener",
+    "TOUCH_ONE_BY_ONE",
+    "swollowTouch",
+    "onTouchBegan",
+    "touch",
+    "jumpPlayer",
+    "node",
+    "anim",
+    "getComponent",
+    "Animation",
+    "play",
+    "jumpAction",
+    "JumpBy",
+    "JumpHeight",
+    "endfunction",
+    "callFunc",
+    "runAction",
+    "sequence"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACR;AACAC,0BAAkB,GAFV;AAGR;AACAC,oBAAY,GAJJ;AAKR;AACAC,oBAAY;AANJ,KAHP;;AAYLC,YAAQ,kBAAY;AACpB;AACA,aAAKC,aAAL;AACC,KAfI;AAgBL;AACAA,mBAAe,yBAAW;AACtB;AACA;AACA,YAAIC,OAAO,IAAX;AACA;AACAV,WAAGW,YAAH,CAAgBC,WAAhB,CAA4B;AACxBC,mBAAOb,GAAGc,aAAH,CAAiBC,gBADA;AAExBC,0BAAc,IAFU;AAGxB;AACAC,0BAAc,sBAASC,KAAT,EAAgBL,KAAhB,EAAuB;AACjC;AACAH,qBAAKS,UAAL;AACA;AACA,uBAAO,IAAP;AACC;AATmB,SAA5B,EAUOT,KAAKU,IAVZ;AAWH,KAjCI;;AAmCL;AACAD,gBAAY,sBAAW;AACnB;AACA;AACA;AACA;AACA;AACA,YAAIE,OAAO,KAAKD,IAAL,CAAUE,YAAV,CAAuBtB,GAAGuB,SAA1B,CAAX;AACAF,aAAKG,IAAL,CAAU,YAAV;;AAEA;AACA,aAAKjB,UAAL,GAAkB,IAAlB;AACA;AACA,YAAIG,OAAO,IAAX;;AAEA;AACA,YAAIe,aAAazB,GAAG0B,MAAH,CAAU,KAAKrB,gBAAf,EAAiC,CAAjC,EAAoC,CAApC,EAAuC,KAAKsB,UAA5C,EAAwD,CAAxD,CAAjB;AACA;AACA,YAAIC,cAAc5B,GAAG6B,QAAH,CAAY,YAAU;AACpCnB,iBAAKH,UAAL,GAAkB,KAAlB;AACA;AACAc,iBAAKG,IAAL,CAAU,eAAV;AACH,SAJiB,EAIf,IAJe,CAAlB;AAKA;AACA,aAAKJ,IAAL,CAAUU,SAAV,CAAoB9B,GAAG+B,QAAH,CAChBN,UADgB,EAEhBG,WAFgB,CAApB;AAGH;AA9DI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\n    extends: cc.Component,\n\n    properties: {\n        //プレイヤーの最大滞空時間\n        jumpDurationTime: 0.6,\n        //プレイヤーのジャンプの高さ\n        jumpHeight: 200,\n        //ジャンプ中かどうか\n        _isJumping: false,\n    },\n    \n    onLoad: function () {\n    //タッチリスナーを初期化\n    this.SetTouchEvent();\n    },\n    //タッチイベントの登録\n    SetTouchEvent: function() {\n        //ラムダ式内でこのクラスのthisを使えるようにするために\n        //selfを用意する\n        var self = this;\n        //シングルタッチ\n        cc.eventManager.addListener({\n            event: cc.EventListener.TOUCH_ONE_BY_ONE,\n            swollowTouch: true,\n            //タッチ開始\n            onTouchBegan: function(touch, event) {\n                //プレイヤーをジャンプさせる\n                self.jumpPlayer();\n                //以降のイベントも取得する場合はtrueを返すよようにする\n                return true;\n                }\n            }, self.node);\n    },\n    \n    //プレイヤーのジャンプ\n    jumpPlayer: function() {\n        //ジャンプ中は反応させないようにする\n        //if (this._isJumping) {\n        //    return;\n        //}\n        //アニメーションをジャンプ用に変更する\n        var anim = this.node.getComponent(cc.Animation);\n        anim.play('PlayerJump');\n        \n        //ジャンプ中\n        this._isJumping = true;\n        //無名関数内でメソッド内の変数を扱うためにselfを用意する\n        var self = this;\n        \n        //cc.jumpBy(時間,方向x,方向y,高さ,回数)\n        var jumpAction = cc.JumpBy(this.jumpDurationTime, 0, 0, this.JumpHeight, 1);\n        //着地したらジャンプフラグを解除する\n        var endfunction = cc.callFunc(function(){\n            self._isJumping = false;\n            //走りモーションに戻す\n            anim.play('PlayerRunning');\n        }, this);\n        //アクション開始\n        this.node.runAction(cc.sequence(\n            jumpAction,\n            endfunction));\n    },\n});\n"
+  ]
+}

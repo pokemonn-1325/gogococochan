@@ -1,0 +1,24 @@
+{
+  "appKey": "",
+  "appSecret": "",
+  "excludeScenes": [],
+  "includeAnySDK": false,
+  "includeSdk": [
+    "anysdk"
+  ],
+  "inlineSpriteFrames": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.GoGoCocochan",
+  "privateKey": "",
+  "renderMode": "0",
+  "startScene": "d43f22bb-fe0f-4602-9747-806e608dd651",
+  "title": "GoGoCocochan",
+  "webOrientation": "auto"
+}
